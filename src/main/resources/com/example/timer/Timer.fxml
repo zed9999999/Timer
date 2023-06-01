@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.timer.StartController" >
+   <children>
+      <Label fx:id="Timertext" layoutX="142.0" layoutY="14.0" prefHeight="136.0" prefWidth="316.0" text="00:00:00" textAlignment="CENTER" textFill="#c61d1d">
+         <font>
+            <Font name="Times New Roman" size="60.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TimeHtext"  text="0" alignment="CENTER" layoutX="39.0" layoutY="140.0" prefHeight="23.0" prefWidth="50.0" style="-fx-text-alignment: ce" />
+      <Label layoutX="97.0" layoutY="144.0" text="时" />
+      <Label layoutX="171.0" layoutY="144.0" text="分" />
+      <TextField fx:id="TimeMtext" text="0" alignment="CENTER" layoutX="113.0" layoutY="140.0" prefHeight="23.0" prefWidth="50.0" />
+      <Label layoutX="245.0" layoutY="144.0" text="秒" />
+      <TextField fx:id="TimeStext" text="0" alignment="CENTER" layoutX="187.0" layoutY="140.0" prefHeight="23.0" prefWidth="50.0" />
+      <Button layoutX="351.0" layoutY="140.0" mnemonicParsing="false" text="开始" fx:id="startButton"  onMouseClicked="#onStartButtonClick"/>
+      <Button fx:id="ZeroButton" onMouseClicked="#onZeroButtonClick" layoutX="431.0" layoutY="140.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="40.0" text="复位" visible="false" />
+      <Label fx:id="Isrunning" visible="false" text="0" />
+   </children>
+</Pane>
